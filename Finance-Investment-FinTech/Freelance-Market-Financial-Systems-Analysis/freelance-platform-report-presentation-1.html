@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Freelancing Platforms Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0077B5 0%, #0E6795 100%);
+            color: white;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1));
+            transition: transform 0.3s ease;
+            background-color: white;
+            border-radius: 16px;
+            padding: 8px;
+        }
+        .logo:hover {
+            transform: translateY(-5px);
+        }
+        .platform-logos {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-top: 40px;
+        }
+        .accent-line {
+            width: 80px;
+            height: 4px;
+            background-color: #ffffff;
+            margin: 16px auto;
+        }
+        .title-text {
+            font-size: 60px;
+            line-height: 1.1;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .subtitle-text {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        .market-stat {
+            font-size: 24px;
+            background-color: rgba(255,255,255,0.15);
+            border-radius: 12px;
+            padding: 12px 24px;
+            margin: 10px;
+            backdrop-filter: blur(5px);
+            display: inline-flex;
+            align-items: center;
+        }
+        .market-stat i {
+            margin-right: 12px;
+            font-size: 28px;
+        }
+        .overlay-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: 0;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 60px;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .year-badge {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: white;
+            color: #0077B5;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="overlay-grid"></div>
+        <div class="year-badge">2025</div>
+        <div class="content">
+            <h1 class="title-text">Global Freelancing Platforms</h1>
+            <div class="accent-line"></div>
+            <h2 class="subtitle-text">Comprehensive Analysis of the Top 5 Marketplaces</h2>
+            
+            <div class="stats-container">
+                <div class="market-stat">
+                    <i class="fas fa-chart-line"></i>
+                    <span>$7.32B Market Value</span>
+                </div>
+                <div class="market-stat">
+                    <i class="fas fa-user-tie"></i>
+                    <span>1.56B Active Freelancers</span>
+                </div>
+                <div class="market-stat">
+                    <i class="fas fa-arrow-trend-up"></i>
+                    <span>17.55% Annual Growth</span>
+                </div>
+            </div>
+            
+            <div class="platform-logos">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Upwork-logo.svg" alt="Upwork" class="logo">
+                <img src="https://assets.toptal.io/images/logo/toptal.svg" alt="Toptal" class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Fiverr_logo_2020.svg" alt="Fiverr" class="logo">
+                <img src="https://uploads-ssl.webflow.com/62903b5abef1f47348416ad3/62903b5abef1f4186c416afe_freelancer-logo.png" alt="Freelancer.com" class="logo">
+                <img src="https://www.peopleperhour.com/images/pph-logo-text-horizontal.svg" alt="PeoplePerHour" class="logo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
